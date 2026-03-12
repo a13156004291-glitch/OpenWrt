@@ -16,5 +16,11 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-# 添加 kiddin9 的插件库 (为了 iStore 和界面)
-echo 'src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git' >> feeds.conf.default
+# 添加 kenzok8 常用插件包 (包含科学上网、去广告等绝大多数常用插件)
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages.git' >> feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small.git' >> feeds.conf.default
+
+# 添加 iStore 商店和 QuickStart 卡片首页的官方直连库
+echo 'src-git istore https://github.com/linkease/istore.git;main' >> feeds.conf.default
+echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
