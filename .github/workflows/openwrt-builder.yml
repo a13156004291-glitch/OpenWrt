@@ -14,7 +14,7 @@ jobs:
       - name: Initialization environment
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install build-essential git terminal-colors gawk gettext libncurses5-dev libssl-dev python3 unzip zlib1g-dev
+          sudo -E apt-get -qq install build-essential git gawk gettext libncurses5-dev libssl-dev python3 unzip zlib1g-dev file python3-distutils python3-setuptools libelf-dev nollvm
           sudo timedatectl set-timezone "Asia/Shanghai"
 
       - name: Clone source code
